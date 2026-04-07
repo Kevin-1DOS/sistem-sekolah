@@ -44,6 +44,10 @@
                     <label for="phone" class="block font-bold ">No.HP</label>
                     <input type="text" name="phone" id="phone" placeholder="Masukkan no telepon" class="border rounded-lg py-2 px-4 w-full">
                 </div>
+                <div class="flex justify-end gap-4 col-span-2">
+                    <a href="/students" class="py-2 px-4 bg-gray-500 text-white rounded-lg">Batal</a>
+                    <button type="submit" class="py-2 px-4 bg-blue-500 text-white rounded-lg">Simpan</button>
+                </div>
                </form>
 
             </div>
