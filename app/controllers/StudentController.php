@@ -13,8 +13,7 @@ class StudentController extends Controller {
 public function index() {
     $studentmodel = new Student();
     $students = $studentmodel->getStudents();   
-    print_r($students);
-$this->view('students.index')  ;
+$this->view('students.index' , ['students' => $students]);
 }
 
 public function create() {
