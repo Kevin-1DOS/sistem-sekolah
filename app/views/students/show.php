@@ -13,20 +13,20 @@
                <div class="py-4 px-6 space-y-4 grid grid-cols-2 gap-4">
                 <div class="space-y-2">
                     <label for="name" class="block font-bold ">Nama</label>
-                    <input type="text" name="name" id="name" placeholder="Masukkan nama" class="border rounded-lg py-2 px-4 w-full" readonly>
+                    <input value="<?= $student['name']?>" type="text" name="name" id="name" placeholder="Masukkan nama" class="border rounded-lg py-2 px-4 w-full" readonly>
 
                 </div>
                 <div class="space-y-2">
                     <label for="nis" class="block font-bold ">NIS</label>
-                    <input type="text" name="nis" id="nis" placeholder="Masukkan NIS" class="border rounded-lg py-2 px-4 w-full" readonly>
+                    <input value="<?= $student['nis']?>" type="text" name="nis" id="nis" placeholder="Masukkan NIS" class="border rounded-lg py-2 px-4 w-full" readonly>
                 </div>
                 <div class="space-y-2">
                     <label for="class" class="block font-bold ">Kelas</label>
-                    <input type="text" name="class" id="class" placeholder="Masukkan kelas" class="border rounded-lg py-2 px-4 w-full" readonly>
+                    <input value="<?= $student['class']?>" type="text" name="class" id="class" placeholder="Masukkan kelas" class="border rounded-lg py-2 px-4 w-full" readonly>
                 </div>
                 <div class="space-y-2">
                     <label for="phone" class="block font-bold ">No.HP</label>
-                    <input type="text" name="phone" id="phone" placeholder="Masukkan no telepon" class="border rounded-lg py-2 px-4 w-full" readonly>
+                    <input value="<?= $student['phone_number']?>" type="text" name="phone" id="phone" placeholder="Masukkan no telepon" class="border rounded-lg py-2 px-4 w-full" readonly>
                 </div>
                 <div class="flex justify-end gap-4 col-span-2">
                     <a href="/students" class="py-2 px-4 bg-gray-500 text-white rounded-lg">Batal</a>

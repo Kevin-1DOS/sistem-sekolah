@@ -17,15 +17,20 @@ $this->view('students.index' , ['students' => $students]);
 }
 
 public function create() {
+   
 $this->view('students.create')  ;
 }
 
 public function show($id) {
-$this->view('students.show', ['id' => $id]);
+    $id = intval($id);
+     $studentmodel = new Student();
+    $student = $studentmodel->getStudent($id);
+
+$this->view('students.show', ['student' => $student]);
 }
 
 public function edit(string $id) {
-$this->view('students.edit', ['id' => $id]);
+$this->view('students.edit');
 }
 
 
